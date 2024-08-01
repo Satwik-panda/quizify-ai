@@ -13,6 +13,8 @@ Quizify AI is an intelligent quiz generation platform where users can take quizz
 
 This project was created using Create React App, Tailwind CSS, Flask, and MongoDB. To get started with the installation, follow these steps:
 
+### Frontend
+
 1. Clone the repository:
     ```bash
     git clone https://github.com/your-username/quizify-ai.git
@@ -31,25 +33,54 @@ This project was created using Create React App, Tailwind CSS, Flask, and MongoD
     VITE_APP_URL=your_backend_url
     ```
 
-4. Start the development server:
+
+### Backend
+
+1. Navigate to the backend directory:
     ```bash
-    npm start
+    cd src
+    cd Backend
     ```
+
+2. Create a virtual environment:
+    ```bash
+    python -m venv venv
+    ```
+
+3. Activate the virtual environment:
+    ```bash
+    # On Windows
+    venv\Scripts\activate
+
+    # On macOS/Linux
+    source venv/bin/activate
+    ```
+
+4. Install the dependencies from `requirements.txt`:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
 
 ## Usage
 
 To use Quizify AI, follow these steps:
 
-1. Create a `.env` file in the root directory and add the following environment variables:
+1. Create a `.env` file in both the root directory and the backend directory, and add the following environment variables:
     ```env
     VITE_API_KEY=your_openai_api_key
     MONGO_URL=your_mongo_database_url
     VITE_APP_URL=your_backend_url
     ```
 
-2. Run the application using the development server command:
+2. Run the frontend development server:
     ```bash
-    npm start
+    npm start run
+    ```
+
+3. Run the Flask backend server:
+    ```bash
+    python3 app.py
     ```
 
 ## Contribution
@@ -70,5 +101,4 @@ To contribute to Quizify AI, please push your changes to the `dev` branch:
     git push origin your-feature-branch
     ```
 5. Create a pull request against the `dev` branch.
-
 
