@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:900i");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.option:hover {
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: #deb351;
+  border-color: rgb(0, 0, 0);
+  color: black;
+}
+
+.option.correct {
+  background: linear-gradient(90deg, #4ade80, #32cd32, #00ff00);
+  border-color: black;
+  border-width: 1px;
+  color: black;
+}
+
+.option.incorrect {
+  background: linear-gradient(90deg, #ff7f7f, #ff4c4c, #ff0000);
+  border-color: black;
+  border-width: 1px;
+  color: black;
+}
+
+.normal-weight {
+  font-weight: 400;
+  padding: 2.4rem;
+  word-spacing: 0.4rem;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+/* navigation buttons */
+
+.cta {
+  font-family: "Poppins", sans-serif;
+}
+
+.cta:hover {
+  width: 120px;
+}
+
+.cta span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: none;
+}
+
+.cta:hover .one,
+.cta:hover .three {
+  opacity: 1;
+}
+
+.one {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(0%);
+}
+
+.three {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateX(60%);
+}
+
+.cta:hover .one {
+  transform: translateX(-2px);
+}
+
+.cta:hover .two {
+  transform: translateX(0);
+}
+
+.cta:hover .three {
+  transform: translateX(2px);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .one {
+  animation: color_anim 1s infinite 0.3s;
+}
+
+.cta:hover .two {
+  animation: color_anim 1s infinite 0.8s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: #fbc638;
+  }
+  100% {
+    fill: white;
+  }
+}

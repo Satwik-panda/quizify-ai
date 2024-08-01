@@ -1,0 +1,38 @@
+https://www.mongodb.com/try/download/community -- to download mongo console on your PC
+https://www.mongodb.com/try/download/shell  -- to download mongo shell to interact with mongo collections via  terminal
+
+
+After Install MongoDB on Windows:
+Follow the installation instructions specific to your operating system:
+
+Windows: Run the downloaded .msi installer and follow the installation steps.
+macOS: Use the Homebrew package manager or download the .tgz file.
+Linux: Follow the instructions on the MongoDB website for your specific distribution.
+Step 2: Add MongoDB to PATH (Windows)
+Locate MongoDB Binaries:
+After installation, MongoDB binaries (mongod.exe and mongo.exe) are usually located in C:\Program Files\MongoDB\Server\<version>\bin.
+
+Add to PATH:
+
+Right-click on "This PC" or "Computer" on the desktop or in File Explorer, and select "Properties".
+Click on "Advanced system settings".
+Click on the "Environment Variables" button.
+In the "System variables" section, find the Path variable and click "Edit".
+Click "New" and add the path to the MongoDB binaries directory, e.g., C:\Program Files\MongoDB\Server\<version>\bin.
+Click "OK" to close all windows.
+Step 3: Start MongoDB Server
+Open Command Prompt:
+Open a new Command Prompt window to ensure the updated PATH variable is recognized.
+
+
+Example of a Path
+C:\Program Files\MongoDB\Server\7.0\bin
+
+
+__________________Installing MongoDB Shell (mongosh)__________________
+
+Download and install MongoDB Shell (mongosh) from the official MongoDB website.
+Add mongosh to your system PATH.
+Verify the installation by running mongosh --version in the Command Prompt or PowerShell.
+
+Path Example: C:\Program Files\MongoDB\mongosh\bin

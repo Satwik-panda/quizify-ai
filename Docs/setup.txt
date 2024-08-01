@@ -1,0 +1,35 @@
+### To create first react app through vite through command ####
+
+vite : This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+1. npm create vite@latest
+2. enter project name 
+3. choose appropriate tech stack
+4. cd project-name
+5. npm install
+6. npm run dev
+
+### To setup tailwind in our project through command ####
+
+1. npm install -D tailwindcss postcss autoprefixer
+2. npx tailwindcss init -p
+3. make changes to tailwind.config.js
+   /** @type {import('tailwindcss').Config} */
+  export default {
+    content: [
+      "./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
+
+4. Add this in css file
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+
+Given the topic ${val}, can you evaluate if this ${val} is suitable for creating a quiz? Consider the depth of information available, the variety of possible questions, and the overall engagement potential of the topic.\nrespond in yes or no`

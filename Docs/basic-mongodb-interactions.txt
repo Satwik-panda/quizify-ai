@@ -1,0 +1,24 @@
+List Databases
+> show dbs
+
+Switch to a Database
+> use <database_name>
+For example:
+> use quizify
+
+Show Collections in the Current Database
+> show collections
+
+Insert a Document into a Collection
+> db.users_data.insertOne({"email": "example@example.com", "password": "password123"})
+
+Query Documents in a Collection
+> db.users_data.find()
+
+Exit the MongoDB Shell
+To exit the MongoDB shell, simply type:
+exit
+
+
+
+> exit
